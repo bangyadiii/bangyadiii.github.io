@@ -1,0 +1,148 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 100%;
+}
+.navbar {
+  padding: 1%;
+  background: #48487f;
+}
+.navbar-toggler {
+  display: none;
+  border: none;
+  height: 25px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+@media screen and (max-width: 991px) {
+  .navbar-toggler {
+    display: flex;
+  }
+}
+.navbar-toggler span {
+  display: block;
+  height: 3px;
+  width: 26px;
+  border-radius: 2px;
+  background-color: whitesmoke;
+}
+
+.navbar-brand {
+  margin-right: 25px;
+  font-size: 2vw;
+  font-family: "Comfortaa", cursive;
+}
+
+.navbar .user a {
+  color: #ebebeb;
+  text-decoration: none;
+  margin: 0 1.2vw;
+}
+
+.navbar .user .material-icons {
+  font-size: 1.2rem;
+}
+.user .ikon-search {
+  position: relative;
+  background-color: transparent;
+  border: none;
+  color: #ebebeb;
+}
+.nav-item {
+  margin-right: 1rem;
+}
+.search-bar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.dropdown {
+  position: absolute;
+  display: flex;
+  margin-top: 4vw;
+  transform: translateY(20px);
+  transition: all 0.4s ease;
+  opacity: 0;
+  cursor: pointer;
+}
+.nav-keranjang {
+  position: relative;
+  padding-top: 5%;
+}
+.login-btn {
+  align-items: center;
+}
+.cart__badge {
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+
+  color: #3d3d3d;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.5rem;
+  top: 0;
+  right: 20%;
+  border: 2px solid #48487f;
+}
+@media screen and (max-width: 768px) {
+  .cart__badge {
+    right: 0%;
+  }
+}
+.active-dropdown {
+  opacity: 1;
+  transform: translateY(0px);
+  pointer-events: all;
+}
+@media screen and (max-width: 768px) {
+  .search-bar {
+    right: 0;
+  }
+
+  .nav-item,
+  .navbar .user a,
+  .user button {
+    font-size: 2.5vw;
+  }
+  .navbar-brand {
+    font-size: 1.3rem;
+  }
+  .dropdown {
+    right: 5%;
+    margin-top: 7vw;
+  }
+  .dropdown .btn,
+  .dropdown .form-control {
+    font-size: 0.8rem;
+  }
+}
+.footer {
+  margin-top: 4vw;
+}
+.footer .gambar img {
+  width: 80%;
+}
+.footer h3 {
+  font-size: 2.2vw;
+  margin-bottom: 2vw;
+  text-align: center;
+}
+.footer .deskripsi p {
+  font-size: 12px;
+}
+@media screen and (max-width: 768px) {
+  .footer .gambar img {
+    width: 30%;
+  }
+  .footer h3,
+  .footer h5 {
+    font-size: 3vw;
+    font-weight: 600;
+  }
+}

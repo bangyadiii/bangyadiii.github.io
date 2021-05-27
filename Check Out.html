@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+        <link rel="stylesheet" href="fontawesome/css/all.min.css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous" />
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Roboto&display=swap" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=B612:ital@1&family=Comfortaa&family=Roboto&display=swap" rel="stylesheet" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <title>Shop</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Chamel Boutique</a>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="About Us.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="shop.html">Shop</a>
+                        </li>
+                        <li class="nav-item"><a href="Payment Confirmation.html" class="nav-link">Payment Confirmation</a></li>
+                    </ul>
+                </div>
+                <div class="user d-flex">
+                    <div class="search-bar">
+                        <button class="ikon-search" href=""><i class="fas fa-search"></i></button>
+                        <div class="dropdown dropdown-search col-md-6 col-11">
+                            <input class="form-control me-2" type="search" placeholder="Cari sesuatu" aria-label="Search" />
+                            <button class="btn" type="submit"><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+                    <div class="nav-keranjang">
+                        <a href="Cart.html"><span class="material-icons"> shopping_cart </span></a>
+                        <span class="cart__badge d-flex bg-warning">0</span>
+                    </div>
+                    <a class="login-btn active" href="Login.html"><span class="active">Login</span></a>
+                    <a href="" class="material-icons profile-icon"> account_circle </a>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+        <div class="container-fluid sub-judul">Check Out</div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="container-fluid form-box">
+                        <h5>Alamat Pengiriman</h5>
+                        <div class="mb-3 d-flex unit-form">
+                            <label for="InputNama" class="form-label col-3">Nama</label>
+                            <input class="form-control" id="InputNama" aria-describedby="emailHelp" />
+                        </div>
+                        <div class="mb-3 d-flex unit-form">
+                            <label for="InputNegara" class="form-label col-3">Negara</label>
+                            <input class="form-control" id="InputNegara" aria-describedby="emailHelp" />
+                        </div>
+                        <div class="mb-3 d-flex unit-form">
+                            <label for="InputAlamat" class="form-label col-3">Alamat</label>
+                            <input class="form-control" id="InputAlamat" aria-describedby="emailHelp" />
+                        </div>
+                        <div class="mb-3 d-flex unit-form">
+                            <label for="InputProvinsi" class="form-label col-3">Provinsi</label>
+                            <input class="form-control" id="InputProvinsi" aria-describedby="emailHelp" />
+                        </div>
+                        <div class="mb-3 d-flex unit-form">
+                            <label for="InputKota" class="form-label col-3">Kota</label>
+                            <input class="form-control" id="InputKota" aria-describedby="emailHelp" />
+                        </div>
+                        <div class="mb-3 d-flex unit-form">
+                            <label for="InputDistrict" class="form-label col-3">District</label>
+                            <input class="form-control" id="InputDistrict" aria-describedby="emailHelp" />
+                        </div>
+                        <div class="mb-3 d-flex unit-form">
+                            <label for="InputKodePos" class="form-label col-3">Kode Pos</label>
+                            <input class="form-control" id="InputKodePos" aria-describedby="emailHelp" />
+                        </div>
+                        <div class="mb-3 d-flex unit-form">
+                            <label for="InputTelepon" class="form-label col-3">No Telepon</label>
+                            <input type="nomor" class="form-control" id="InputTelepon" aria-describedby="emailHelp" />
+                        </div>
+                        <div class="mb-3 d-flex unit-form">
+                            <label for="InputEmail" class="form-label col-3">Email</label>
+                            <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" />
+                        </div>
+                    </div>
+                    <div class="container-fluid form-box mt-4">
+                        <a href="Login.html">
+                            <h5>Create an Account?</h5>
+                        </a>
+                    </div>
+                    <div class="container-fluid form-box mt-4">
+                        <h5>Informasi Tambahan</h5>
+                        <div class="mb-3 d-flex unit-form">
+                            <label for="InputNote" class="form-label col-3">Catatan Order</label>
+                            <input type="note" class="form-control" id="InputNote" aria-describedby="emailHelp" />
+                        </div>
+                    </div>
+                    <div class="container-fluid form-box mt-4">
+                        <h5>Metode Pembayaran</h5>
+                        <div class="container">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radio-metode-pembayaran" id="bank1" />
+                                <label class="form-check-label" for="bank1"> Transfer Bank Mandiri </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radio-metode-pembayaran" id="bank2" />
+                                <label class="form-check-label" for="bank2"> Transfer Bank BCA </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radio-metode-pembayaran" id="bank3" />
+                                <label class="form-check-label" for="bank3"> Transfer Bank BRI</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radio-metode-pembayaran" id="bank4" />
+                                <label class="form-check-label" for="bank4"> Transfer Bank BNI </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="container-fluid form-box mt-4">
+                        <h5>Barang yang di pesan</h5>
+                        <div class="row">
+                            <div class="col-5"><img src="Gambar/2.png" width="100%" alt="" /></div>
+                            <div class="row col-6 d-flex">
+                                <div class="col-6">
+                                    <h6>Produk</h6>
+                                    <h6>Size</h6>
+                                    <h6>Color</h6>
+                                    <h6>Quantity</h6>
+                                    <h6>Price</h6>
+                                </div>
+                                <div class="col-6">
+                                    <h6>: Dany Dress</h6>
+                                    <h6>: S</h6>
+                                    <h6>: Navy</h6>
+                                    <h6>: 1</h6>
+                                    <h6>: Rp 510.000</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr />
+                    </div>
+                    <div class="container-fluid form-box mt-4">
+                        <h5>Detail Pesanan</h5>
+                        <div class="row">
+                            <div class="col-3"><h6>Produk</h6></div>
+                            <div class="col-8"><h6>Nama Produk1, Nama Produk2</h6></div>
+                        </div>
+                        <hr />
+                        <div class="row">
+                            <div class="col-3"><h6>Shipping</h6></div>
+                            <div class="col-8"><h6>Please fill in your shipping destination address completely to get shipping cost options.</h6></div>
+                        </div>
+                        <hr />
+                        <div class="row">
+                            <div class="col-3"><h6>Total</h6></div>
+                            <div class="col-8"><h6>Rp 610.000</h6></div>
+                        </div>
+                        <hr />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container container-md">
+                <h3>Kenapa Harus Kami?</h3>
+                <div class="row">
+                    <div class="col-md-3 col-6">
+                        <div class="row">
+                            <div class="gambar col-md-4">
+                                <img src="Gambar/image 35.png" width="80%" alt="" />
+                            </div>
+                            <div class="deskripsi col-8">
+                                <h5>Gratis Ongkir</h5>
+                                <p>Gratis Ongkir 10rb minimal belanja 150rb untuk kilogram pertama.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="row">
+                            <div class="gambar col-md-4">
+                                <img src="Gambar/image 36.png" width="80%" alt="" />
+                            </div>
+                            <div class="deskripsi col-8">
+                                <h5>Bisa ditukar size</h5>
+                                <p>Gratis Ongkir 10rb minimal belanja 150rb untuk kilogram pertama.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="row">
+                            <div class="gambar col-md-4">
+                                <img src="Gambar/image 37.png" width="80%" alt="" />
+                            </div>
+                            <div class="deskripsi col-8">
+                                <h5>Garansi Kepuasan</h5>
+                                <p>Gratis Ongkir 10rb minimal belanja 150rb untuk kilogram pertama.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="row">
+                            <div class="gambar col-md-4">
+                                <img src="Gambar/image 38.png" width="80%" alt="" />
+                            </div>
+                            <div class="deskripsi col-8">
+                                <h5>Local Pride</h5>
+                                <p>Gratis Ongkir 10rb minimal belanja 150rb untuk kilogram pertama.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <br />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

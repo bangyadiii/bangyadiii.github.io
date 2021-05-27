@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+        <link rel="stylesheet" href="fontawesome/css/all.min.css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous" />
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Roboto&display=swap" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=B612:ital@1&family=Comfortaa&family=Roboto&display=swap" rel="stylesheet" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <title>Home</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Chamel Boutique</a>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="About Us.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="shop.html">Shop</a>
+                        </li>
+                        <li class="nav-item"><a href="Payment Confirmation.html" class="nav-link">Payment Confirmation</a></li>
+                    </ul>
+                </div>
+                <div class="user d-flex">
+                    <div class="search-bar">
+                        <button class="ikon-search" href=""><i class="fas fa-search"></i></button>
+                        <div class="dropdown dropdown-search col-md-6 col-11">
+                            <input class="form-control me-2" type="search" placeholder="Cari sesuatu" aria-label="Search" />
+                            <button class="btn" type="submit"><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+                    <div class="nav-keranjang">
+                        <a href="Cart.html"><span class="material-icons"> shopping_cart </span></a>
+                        <span class="cart__badge d-flex bg-warning">0</span>
+                    </div>
+                    <a class="login-btn active" href="Login.html"><span class="active">Login</span></a>
+                    <a href="" class="material-icons profile-icon"> account_circle </a>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+
+        <div class="col-md-6 col-10 alert-container position-fixed d-none"></div>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="Gambar/slide 1.png" class="d-block w-100" alt="..." />
+                    <div class="carousel-caption" id="carousel-caption1">
+                        <h2 class="lead">Special Collection</h2>
+                        <h1 class="display-4 text-nowrap">ZAHRA DRESS</h1>
+                        <h2 class="harga">Rp 500.000</h2>
+                        <a class="btn">Shop Now</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="Gambar/slide 2.png" class="d-block w-100" alt="..." />
+                    <div class="carousel-caption" id="carousel-caption2">
+                        <h1 class="display-4 text-nowrap">NADA DRESS</h1>
+                        <h2 class="harga">Rp 100.000</h2>
+                        <a class="btn" href="#" role="button" id="btn-slide2">Shop Now</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="Gambar/slide 3.png" class="d-block w-100" alt="..." />
+                    <div class="carousel-caption col-md-6 text-sm-center position-absolute" id="carousel-caption3">
+                        <h2 class="lead">CHAMEL BOUTIQUE MENGUCAPKAN</h2>
+                        <h1 class="display-4">SELAMAT HARI RAYA IDUL FITRI</h1>
+                        <p class="deskripsi text-md-center">Koleksi Busana Spesial Hari Raya</p>
+                        <a class="btn mt-0" href="#" role="button" id="btn-slide3">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden"></span>
+            </button>
+        </div>
+        <div class="container" id="jargon">
+            <div class="row">
+                <div class="lead col-md-5 d-flex" id="judul-jargon">
+                    <h2>JARGON ATAU KATA KATA MUTIARA DARI PERUSAHAAN</h2>
+                </div>
+                <div class="col-md-7" id="deskripsi-jargon">
+                    <p>
+                        Monel "is the name of a metal alloy, in accordance with the characteristics of monel metal who aspire to always shine and be strong. Starting from the friendship of 5 young Women who have the same passion for
+                        fashion, building Monel with the vision of making every woman believe in what. twhich she was wearing.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container sub-judul-home">
+            <div class="row">
+                <div class="col-4">
+                    <h3 class="judul">Belanja Sekarang</h3>
+                </div>
+                <div class="col-8">
+                    <hr />
+                </div>
+            </div>
+        </div>
+
+        <div class="container-sm container-belanja-sekarang">
+            <div class="produk satu col-md-3 col-4 float-start" id="kategori-atasan">
+                <div class="deskripsi align-bottom">
+                    <h4 class="judul">Atasan</h4>
+                    <p class="btn">Lihat Selengkapnya</p>
+                </div>
+            </div>
+            <div class="produk dua col-md-3 col-4 float-start" id="kategori-bawahan">
+                <div class="deskripsi">
+                    <h4 class="judul">Bawahan</h4>
+                    <p class="btn">Lihat Selengkapnya</p>
+                </div>
+            </div>
+            <div class="produk dua col-md-3 col-4 float-start" id="kategori-hijab">
+                <div class="deskripsi">
+                    <h4 class="judul">Hijab</h4>
+                    <p class="btn">Lihat Selengkapnya</p>
+                </div>
+            </div>
+            <div class="produk dua col-md-3 col-4 float-start" id="kategori-batik-kebaya">
+                <div class="deskripsi">
+                    <h4 class="judul">Batik & Kebaya</h4>
+                    <p class="btn">Lihat Selengkapnya</p>
+                </div>
+            </div>
+            <div class="produk dua col-md-3 col-4 float-start" id="kategori-aksesoris">
+                <div class="deskripsi">
+                    <h4 class="judul">Aksesoris</h4>
+                    <p class="btn">Lihat Selengkapnya</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container sub-judul-home">
+            <div class="row">
+                <div class="col-4">
+                    <h3 class="judul">Produk Terbaru</h3>
+                </div>
+                <div class="col-8">
+                    <hr />
+                </div>
+            </div>
+        </div>
+
+        <div class="container-produk-terbaru container-sm">
+            <div class="produk col-md-3">
+                <a href=""><img src="Gambar/BIN_50392.png" width="100%" alt="" /></a>
+                <div class="deskripsi container">
+                    <a href=""><h4 class="judul">Dress</h4></a><br />
+                    <a href=""><span class="kategori">Kategori Pakaian</span></a>
+                    <div class="d-flex container-harga-cart">
+                        <div class="btn-add-cart">
+                            <i class="fas fa-cart-plus fa-1x float-left"></i>
+                            <input type="checkbox" class="position-absolute" />
+                        </div>
+                        <div class="harga-produk d-flex">
+                            <p class="card-text harga">Rp 250.000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="produk col-md-3">
+                <a href=""><img src="Gambar/BIN_50392.png" width="100%" alt="" /></a>
+                <div class="deskripsi container">
+                    <a href=""><h4 class="judul">Dress</h4></a><br />
+                    <a href=""><span class="kategori"> Kategori Pakaian</span></a
+                    ><br />
+                    <div class="d-flex container-harga-cart">
+                        <div class="btn-add-cart">
+                            <i class="fas fa-cart-plus fa-1x float-left"></i>
+                            <input type="checkbox" class="position-absolute" />
+                        </div>
+                        <div class="harga-produk d-flex">
+                            <p class="card-text harga">Rp 250.000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="produk col-md-3">
+                <a href=""><img src="Gambar/BIN_50392.png" width="100%" alt="" /></a>
+                <div class="deskripsi container">
+                    <a href=""><h4 class="judul">Dress</h4></a><br />
+                    <a href=""><span class="kategori"> Kategori Pakaian</span></a
+                    ><br />
+                    <div class="d-flex container-harga-cart">
+                        <div class="btn-add-cart">
+                            <i class="fas fa-cart-plus fa-1x float-left"></i>
+                            <input type="checkbox" class="position-absolute" />
+                        </div>
+                        <div class="harga-produk d-flex">
+                            <p class="card-text harga">Rp 250.000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="produk col-md-3">
+                <a href=""><img src="Gambar/BIN_50392.png" width="100%" alt="" /></a>
+                <div class="deskripsi container">
+                    <a href=""><h4 class="judul">Dress</h4></a><br />
+                    <a href=""><span class="kategori"> Kategori Pakaian</span></a
+                    ><br />
+                    <div class="d-flex container-harga-cart">
+                        <div class="btn-add-cart">
+                            <i class="fas fa-cart-plus fa-1x float-left"></i>
+                            <input type="checkbox" class="position-absolute" />
+                        </div>
+                        <div class="harga-produk d-flex">
+                            <p class="card-text harga">Rp 250.000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="Selengkapnya">
+            <a href="">Lihat Selengkapnya <i class="fas fa-arrow-right float-left"></i></a>
+        </div>
+
+        <div class="about-us container">
+            <div class="row">
+                <div class="gambar col-md-5"></div>
+                <div class="deskripsi col-md-7">
+                    <h3 class="judul">Tentang Chamel</h3>
+                    <br />
+                    <span>
+                        Lebih dari 29 tahun Ranti telah berdiri menjadi Pioneer Busana Muslim di Indonesia. Tak heran Butik Busana Muslim Branded lekat menjadi brand image Ranti. Di Online Shop Busana Muslim inilah anda bisa mendapatkan
+                        produk terbaik kami dengan pelayanan terbaik.
+                        <br /><br />
+                        RANTI yang berdiri sejak tahun 1987 kini sudah menjadi pionir bisnis busana muslim di Indonesia. Saat ini RANTI memiliki 17 Gallery dengan 37.000 member yang tersebar hampir di seluruh Indonesia dan negara-negara
+                        lain.
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid subs">
+            <h4>
+                Ingin dapatkan info SALE terbaru? <br />
+                Daftarkan emailmu sekarang!
+            </h4>
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="contoh : contoh@gmail.com" aria-label="Email Subscribe" aria-describedby="button-addon2" />
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2">Subscribe</button>
+            </div>
+        </div>
+
+        <div class="info container-sm">
+            <div class="icon">
+                <a href=""><img src="Gambar/Group 57.png" alt="" /></a>
+                <a href=""><img src="Gambar/Group 60.png" alt="" /></a>
+                <a href=""><img src="Gambar/Group 61.png" alt="" /></a>
+            </div>
+            <div class="text container-md">
+                <div class="row">
+                    <a class="link col-md-3" href="">Cara Melakukan Pembayaran</a>
+                    <a class="link col-md-3" href="">Cara Konfirmasi Pembayaran</a>
+                    <a class="link col-md-3" href="">Kebijakan Pengembalian Barang </a>
+                    <a class="link col-md-3" href="">Syarat dan Ketentuan</a>
+                    <a class="link col-md-3" href=""></a>
+                    <a class="link col-md-3" href="">Blog & News</a>
+                    <a class="link col-md-3" href="Login.html">Login</a>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container container-md">
+                <h3>Kenapa Harus Kami?</h3>
+                <div class="row">
+                    <div class="col-md-3 col-6">
+                        <div class="row">
+                            <div class="gambar col-md-4">
+                                <img src="Gambar/image 35.png" alt="" />
+                            </div>
+                            <div class="deskripsi col-8">
+                                <h5>Gratis Ongkir</h5>
+                                <p>Gratis Ongkir 10rb minimal belanja 150rb untuk kilogram pertama.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="row">
+                            <div class="gambar col-md-4">
+                                <img src="Gambar/image 36.png" width="80%" alt="" />
+                            </div>
+                            <div class="deskripsi col-8">
+                                <h5>Bisa ditukar size</h5>
+                                <p>Gratis Ongkir 10rb minimal belanja 150rb untuk kilogram pertama.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="row">
+                            <div class="gambar col-md-4">
+                                <img src="Gambar/image 37.png" width="80%" alt="" />
+                            </div>
+                            <div class="deskripsi col-8">
+                                <h5>Garansi Kepuasan</h5>
+                                <p>Gratis Ongkir 10rb minimal belanja 150rb untuk kilogram pertama.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="row">
+                            <div class="gambar col-md-4">
+                                <img src="Gambar/image 38.png" width="80%" alt="" />
+                            </div>
+                            <div class="deskripsi col-8">
+                                <h5>Local Pride</h5>
+                                <p>Gratis Ongkir 10rb minimal belanja 150rb untuk kilogram pertama.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <br />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
